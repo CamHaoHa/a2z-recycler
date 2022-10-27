@@ -3,14 +3,172 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>A2Z Recycler</title>
+    <meta name="author" content=" Cam Hao Ha  email: cam.ha2@tafensw.edu.au">
+    <link rel="stylesheet" href="css-test.css">                                                                                                                                                                                     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function() {
+        $("a[href=#menu-expand]").click(function(e) {
+            $(".menu").toggleClass("menu-open");
+            e.preventDefault();
+        });
+    }); 
+  </script>
 </head>
 
 
 <body>
-    
+
+<div id="wrapper">
+
+<div id="topper">
+    <header>
+        <a href="index.html"><img src="images/A-z-Recyller-3.png" alt="logo_image"></a>
+    </header>
+    <div id="responsive-menu">
+        <div class="menu-icon">
+            <a href="#menu-expand"><img src="images/menu_icon.png" width="25" height="25" alt="Responsive Menu icon"></a>
+        </div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" id="current">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="aboutus.html">About&nbsp;Us</a></li>
+                <li><a href="contact.html">Contact&nbsp;Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="social-media-icons">
+        <ul>
+            <li><a href=""><img src="images/facebook_small.png" alt="facebook_small"></a></li>
+            <li><a href=""><img src="images/youtube-variation_small.png" alt="youtube-variation_small"></a></li>
+            <li><a href=""><img src="images/twitter_small.png" alt="twitter_small"></a></li>
+        </ul>
+    </div>
+</div>
+<!-- end topper -->
+<main>
+<!-- hero image  -->
+<div id="hero-image" >
+    <!-- <a href="index.html"><img src="images/hero-image-700.png" alt="hero-image" ></a> -->
+    <div class="hero-image flex-center">
+        <h1>Let's Recycling Everything</h1>
+        <button onclick="window.location.href ='login.html';">LOG IN</button>
+        <button onclick="window.location.href='contact.html';">MAKE ENQUIRY</button> 
+    </div>
+</div>
+<!-- end hero-image  -->
+<div id="content flex-column">
+    <div class="row-1 flex-column">
+        <h1>What's your waste solution?</h1> 
+        <div class="figures flex-row">
+            <p class="active"><a href=""><img src="images/icon-general.webp" alt="general-bin"></a>   General Waste</p>
+            <p class="active"><a href=""><img src="images/icon-mixed-recycling.webp" alt="mix-bin"></a> Mixed Recycling</p>
+            <p class="un-active"><a href=""><img src="images/icon-plastics.webp" alt="plastic"></a>Plastic</p>
+            <p class="un-active"><a href=""><img src="images/icon-paper-card.webp" alt="paper"></a>Paper</p>
+        </div>
+    </div>
+    <div class="row-2 flex-column">
+        <h1 class="un-active">A2Z Recyclers</h1>
+        <p class="un-active">The more we recycle, the less garbage winds up in the landfills and incineration plants. By reusing aluminium, paper, glass, plastics, and other materials, we can save production and energy costs, and reduce the negative impacts that the extraction and processing of virgin materials have on the environment.</p>
+        <p class="un-active">Recycling reduces the need for extracting (mining, quarrying and logging), refining and processing raw materials all of which create substantial air and water pollution. As recycling saves the energy it also reduces greenhouse gas emissions, which helps to tackle climate change.</p>
+        <h2>With A2Z ReCycler</h2>
+        <ul>
+            <li>Reduce waste sent to landfills and incinerators.</li>
+            <li>Prevents pollution.</li>
+            <li>Conserve natural resources.</li>
+            <li>Conserves energy.</li>
+            <li>Creates jobs, producing economic benefits.</li>
+        </ul>
+    </div>
+    <div class="row-4">
+        <h1>Household Waste Solutions</h1>
+        <div>
+            <a href=""><img src="images/tanvi-sharma--4bD2p5zbdA-unsplash.jpg" alt=""></a>
+            <h5>Plastic Waste</h5>
+            <p>With a little use of creativity, plastic bottles can come to good use. For instance, you can cut off the bottom halves of the plastic bottles and plant seedlings in them. These nifty plant-holders are easy to craft and will be a great addition to your garden space.</p>
+        </div>
+        <div>
+            <a href=""><img src="images/kolya-korzh-koNm2YxkBFo-unsplash.jpg" alt=""></a>
+            <h5>Aluminum Foil</h5>
+            <p>There are ways to upcycle and reuse aluminum foil, rather than disposing it off after one use - you can place the foil behind plants in the shade and use the foil as a reflector.</p>
+        </div>
+        <div>
+            <a href=""><img src="images/jen-theodore-qybUrqKmFQw-unsplash.jpg" alt=""></a>
+            <h5>News Paper</h5>
+            <p>you can use them as packing paper to wrap up your fragile items or gifts. You can also use a newspaper as a cleaning aid by mixing water and a splash of white vinegar to clean your window stains, effortlessly</p>
+        </div>
+    </div>
+    <div class="row-3">
+        <h1> Commercial Industrial Solutions</h1>
+        <div>
+            <a href=""><img src="images/globelet-reusable-SRDqOl379Ig-unsplash.jpg" alt=""></a> 
+            <h5>Office Equipments</h5>
+            <p>Whenever employees have old office furniture, phones, computers, staplers, etc.  they are organized and placed in a designated shelving area known as the “Upcycle Station”. When an employee is in need of a “new” office supply, it is protocol to check the Upcycle Station before re-ordering any new items</p>
+        </div>
+        <div>
+            <a href=""><img src="images/globelet-reusable-tkYnYiuKNmI-unsplash.jpg" alt=""></a>
+            <h5> Coffee Cup</h5>
+            <p>We can’t ask employees to give up their morning coffees, but just think about how many of those cups get tossed in the office waste bins daily. Instead, opt to provide them with reusable coffee mugs and water bottles. This small change can drastically reduce the amount of coffee cups and plastic bottles filling up your waste and recycling streams. </p>
+        </div>
+        <div>
+            <a href=""><img src="images/globelet-reusable-uw9tZN5TJBU-unsplash.jpg" alt=""></a>
+            <h5>Behavior Change</h5>
+            <p>Changing the attitudes of office workers towards the creation of waste in the first place can have a major impact on waste production. Eliminating waste by working more carefully, making fewer errors, or simply considering whether or not to print a document can cut down paper use considerably</p>
+        </div>
+    </div>
+    <div class="row-5 projects">
+        <div class="flex-column-center">
+            <h1>Project Undertaken</h1>
+            <ul>
+                <li>Collaborated with an organization Ecogenie</li>
+                <li>Co-founded an organization Good Food</li>
+                <li>Partnered with Green Plastic</li>
+            </ul>
+            <button onclick="window.location.href='projects.html';">Learn More</button>
+        </div>
+
+    </div>
+    <div class="row-6 contact flex-column-center">
+        <h1>Create a custom waste plan for your business </h1>
+        <p>Our leading facilities and technology can manage a huge range of waste. We have all kinds of service to suit your business needs</p>
+        <h1>1. Call Us Today</h1>
+        <p>Contact us via our contact form or call 1300 000 000</p>
+        <h1>2.Get a free quote</h1>
+        <p>Our service team will help you to find out best waste solution</p>
+        <h1>3. Be a Sustainable Business</h1>
+        <p>We consult you to make sustainable easier for you</p>
+        <button onclick="window.location.href='contactus.html';">Contact Us</button>
+    </div>
+    <div class="row-7 sub flex-column-center">
+        <h5 class="flex-grow">Stay up to date with our latest news and event</h5>
+        <input type="email" placeholder="ENTER EMAIL ADDRESS"/>
+        <input type="submit" value= "SUBSCRIBE"/>
+    </div>
+</div>
+</main>
+<footer>
+
+<ul id="utilities">
+    <li>&copy; A-Z Recyling Copyright </li>
+    <li><a href="">Privacy Policy</a></li>
+</ul>
+
+<ul id="socials">
+    <li><a href=""><img src="images/twitter_small.png" width="26" height="20" alt="twitter icon" title="send us tweets"></a></li>
+    <li><a href=""><img src="images/facebook_small.png" width="20" height="20" alt="facebook icon" title="follow us on Facebook"></a></li>
+    <li><a href=""><img src="images/instagram_small.png" width="20" height="20" alt="social icon"></a></li>
+</ul>
+</footer>
+
+
+</div>
+
 </body>
 </html>
