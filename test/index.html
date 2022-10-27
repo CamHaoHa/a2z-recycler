@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cam Hao Ha cam.ha2@studytafensw.edu.au">
+    <link rel="stylesheet" href="a2z_style.css">
+    <title>A-Z Recycler</title>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function() {
+        $("a[href=#menu-expand]").click(function(e) {
+            $(".menu").toggleClass("menu-open");
+            e.preventDefault();
+        });
+    }); 
+  </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="topper"> 
+            <!-- for logo and nav bar and social media icons-->
+            <header class="flex-container">
+                <a href="index.html"><img src="images/A-z-Recyller-3.png" alt="Web-logo" /></a>
+                <!-- flex-item-1 -->
+                <div id="responsive-menu" class="flex-container flex-grow-2">
+                    <div class="menu-icon">
+                        <a href="#menu-expand"><img src="images/menu_icon.png" width="25" height="25" alt="Responsive Menu icon"></a>
+                    </div>
+                    
+                    <nav>
+                        <ul class="menu flex-container flex-grow-2">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About&nbsp;Us</a></li>
+                            <li><a href="contactus.html">Contact&nbsp;Us</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <!-- flex-item-2  -->
+                 <div class="social-media-icons flex-end">
+                    <ul class="flex-container flex-end">
+                        <li><a href=""><img src="images/facebook_small.png" alt="facebook_small"></a></li>
+                        <li><a href=""><img src="images/youtube-variation_small.png" alt="youtube-variation_small"></a></li>
+                        <li><a href=""><img src="images/twitter_small.png" alt="twitter_small"></a></li>
+                    </ul>
+                </div>
+                <!-- flex-item-3  -->
+                    <!-- end social media icons -->
+            </header>
+        </div>
+        <!-- for topper -->
+    </div>
+    
+    <div id="content">
+        <div>
+            <div id="hero-image">
+                <!-- <img src="images/hero-image-700.png" alt="recycling-images"> -->
+                <div class="hero-content">
+                    <h1>Let's Recycling Everything</h1>
+                    <button onclick="window.location.href ='login.html'";>LOG IN</button>
+                    <button onclick="window.location.href='contactus.html'";>MAKE ENQUIRY</button>
+                </div>
+                <!-- the box in the image -->
+            </div>
+            <!--ENDING  hero image section  -->
+        </div>
+    </div>
+</body>
+</html>
