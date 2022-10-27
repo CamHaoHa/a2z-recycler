@@ -308,7 +308,7 @@ input[type=submit]:hover {
 /* FINISH styling main  */
 footer {
     max-width: 500px;
-    margin: auto;
+    margin: 20px auto;
     font-size: 13px;
     padding: 10px 0px 18px 0px;
 }
