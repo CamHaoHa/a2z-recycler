@@ -99,10 +99,12 @@ nav a:hover{
 #hero-image{
     background-color: var(--green);
     background-image: url(images/hero-image-700.png);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
-    padding-bottom: 10%;
-    
+    padding-bottom: 30%;
+    background-position: center;
+    height: 30vh;
+   
 }
 
 .flex-center{
@@ -126,7 +128,7 @@ nav a:hover{
 }
     
 button{ 
-    margin-top: 10%;
+    margin-top: 30%;
     font-size: 5vw;
     cursor: pointer;
     text-align: center;
