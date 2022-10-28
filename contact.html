@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A2Z Recycler</title>
+    <meta name="author" content=" Cam Hao Ha  email: cam.ha2@tafensw.edu.au">
+    <link rel="stylesheet" href="css-test.css">          
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />            
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    
+<!--Get your own code at fontawesome.com-->
+    <script>
+    $(function() {
+        $("a[href=#menu-expand]").click(function(e) {
+            $(".menu").toggleClass("menu-open");
+            e.preventDefault();
+        });
+    }); 
+  </script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+    
+    <div id="topper">
+        <header>
+            <a href="index.html"><img src="images/A-z-Recyller-3.png" alt="logo_image"></a>
+        </header>
+        <div id="responsive-menu">
+            <div class="menu-icon">
+                <a href="#menu-expand"><img src="images/menu_icon.png" width="25" height="25" alt="Responsive Menu icon"></a>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" id="current">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="aboutus.html">ABOUT&nbsp;US</a></li>
+                    <li><a href="contact.html">CONTACT&nbsp;US</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="social-media-icons">
+            <ul >
+                <li><a href=""><img src="images/facebook_small.png" alt="facebook_small"></a></li>
+                <li><a href=""><img src="images/youtube-variation_small.png" alt="youtube-variation_small"></a></li>
+                <li><a href=""><img src="images/twitter_small.png" alt="twitter_small"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end topper -->
+    <main>
+        <div id="hero-image" class="contactPage">
+            <!-- <a href="index.html"><img src="images/hero-image-700.png" alt="hero-image" ></a> -->
+            <div class="hero-image flex-center hero-content un-active ">
+                <h1>Get in Touch</h1>
+                <p> We tackle with all kind of waste from commercial and industrial businesses to house hold waste.</p>
+                <p> We share the same goal to maximise the use of discarded materials, minimalise disposal costs, and prevent potential harm to the environment. Get in touch today.</p>
+            </div>
+        </div>
+        <!-- end hero-image  -->
+        <div id="content" class="contact-page">
+            <div  class="contact-form" >
+                <h1 class="title">Send us a message</h1>
+                <p class="subtitle">If you have any question please feel free to contact us</p>
+                <form action="#">
+                  <label for="fname" >First Name: </label>
+                  <input type="text" id="fname" name="firstname" required>
+                
+                  <label for="lname" >Last Name: </label>
+                  <input type="text" id="lname" name="lastname" required >
+                  
+                  <label for="email" >Email: </label>
+                  <input type="email" name="email" id="email" required>
+                  <label for="text"> Message: </label>
+                  <textarea name="text" id="" cols="30" rows="8" ></textarea>
+          
+                  <input type="submit" name="submit">
+                </form>
+            </div>
+            <div id="info-container" class="info-container">  
+                <h1> A2Z Recycler Contact Details</h1> 
+                <div class="info">
+                <p> 
+                    <i class="fa fa-envelope"></i> Email: <a href="">support@a2z.com.au</a> 
+                </p>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    Phone: Call Us <a href=""> 1800 111 111</a>
+                </p>
+                </div>
+                <div class="map-responsive un-active">
+                    <iframe title='embedded map' 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1656.1361296101977!2d151.200225758302!3d-33.882641345163144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12afd9f4894451%3A0x30040aadbdb87771!2sTAFE%20NSW%20-%20Ultimo%2C%20Building%20G!5e0!3m2!1sen!2sau!4v1666928265441!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>
+        </div>
+        <div class="row-7 sub flex-column-center">
+            <h5 class="flex-grow">Stay up to date with our latest news and event</h5>
+            <input type="email" placeholder="ENTER EMAIL ADDRESS"/>
+            <input type="submit" value= "SUBSCRIBE"/>
+        </div>
+      
+    </main>
+
+    <footer class="max-width">
+
+    <ul id="utilities">
+        <li>&copy; A-Z Recyling Copyright </li>
+        <li><a href="">Privacy Policy</a></li>
+    </ul>
+
+    <ul id="socials">
+        <li><a href=""><img src="images/twitter_small.png" width="26" height="20" alt="twitter icon" title="send us tweets"></a></li>
+        <li><a href=""><img src="images/facebook_small.png" width="20" height="20" alt="facebook icon" title="follow us on Facebook"></a></li>
+        <li><a href=""><img src="images/instagram_small.png" width="20" height="20" alt="social icon"></a></li>
+    </ul>
+    </footer>
+
+
+    </div>
+
+    </body>
+</html>
+
+

@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A2Z Recycler</title>
+    <meta name="author" content=" Cam Hao Ha  email: cam.ha2@tafensw.edu.au">
+    <link rel="stylesheet" href="css-test.css">                                                                                                                                                                                     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function() {
+        $("a[href=#menu-expand]").click(function(e) {
+            $(".menu").toggleClass("menu-open");
+            e.preventDefault();
+        });
+    }); 
+  </script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+    
+    <div id="topper">
+        <header>
+            <a href="index.html"><img src="images/A-z-Recyller-3.png" alt="logo_image"></a>
+        </header>
+        <div id="responsive-menu">
+            <div class="menu-icon">
+                <a href="#menu-expand"><img src="images/menu_icon.png" width="25" height="25" alt="Responsive Menu icon"></a>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" id="current">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="aboutus.html">ABOUT&nbsp;US</a></li>
+                    <li><a href="contact.html">CONTACT&nbsp;US</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="social-media-icons">
+            <ul >
+                <li><a href=""><img src="images/facebook_small.png" alt="facebook_small"></a></li>
+                <li><a href=""><img src="images/youtube-variation_small.png" alt="youtube-variation_small"></a></li>
+                <li><a href=""><img src="images/twitter_small.png" alt="twitter_small"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end topper -->
+<main>
+
+<!-- start cide here -->
+</main>
+
+<footer class="max-width">
+
+<ul id="utilities">
+    <li>&copy; A-Z Recyling Copyright </li>
+    <li><a href="">Privacy Policy</a></li>
+</ul>
+
+<ul id="socials">
+    <li><a href=""><img src="images/twitter_small.png" width="26" height="20" alt="twitter icon" title="send us tweets"></a></li>
+    <li><a href=""><img src="images/facebook_small.png" width="20" height="20" alt="facebook icon" title="follow us on Facebook"></a></li>
+    <li><a href=""><img src="images/instagram_small.png" width="20" height="20" alt="social icon"></a></li>
+</ul>
+</footer>
+
+
+</div>
+
+</body>
+</html>

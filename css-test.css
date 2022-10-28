@@ -105,6 +105,10 @@ nav a:hover{
     height: 40vh;
    
 }
+#hero-image.contactPage{
+    background-image: url(images/pexels-ekaterina-belinskaya-4744747.jpg);
+    height: 40vh;
+}
 
 .flex-center{
     display: flex;
@@ -354,22 +358,85 @@ footer a:hover {
 text-decoration: underline;
 }
    
-    /* responsive google map */
-    .map-responsive{
-        overflow:hidden;
-        padding-bottom:49.25%;
-        position:relative;
-        height:0;
-    }
+/* responsive google map */
+/* contact page  */
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:49.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#content.contact-page{
+    margin: 0;
+    line-height: 2em;
+    padding: 0;
+}
+.contact-form{
+    padding: 20px;
+}
+.contact-form textarea{
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.contact-page h1{
+    font-size: 25px;
+    text-align: left;
+    color: var(--lightgeen);
+}
+
+.contact-page p{
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-page input[type=submit]{
+    width: 40%;
+    margin: 0 auto;
+    margin-left: 27.99%;
     
-    .map-responsive iframe{
-        left:0;
-        top:0;
-        height:100%;
-        width:100%;
-        position:absolute;
-    }
-    /* /* screen sizes >769px   */
+}
+
+#content .info-container h1{
+    display: block;
+    text-align: left;
+    color: var(--lightgeen);
+    font-size: 22px;
+    
+    
+}
+
+#info-container {
+    width: 100%;
+    margin: 20px;
+    line-height: 3em;
+
+}
+#info-container a{
+    text-decoration: none;
+    color: var(--rust);
+}
+#info-container a:hover{
+    text-decoration: underline;
+}
+
+
+/* /* screen sizes >769px   */
     
     @media only screen and (min-width: 769px) {
     body{
@@ -540,7 +607,7 @@ text-decoration: underline;
      }
      .projects{
         background-image: url(images/hero-image-700.png);
-        filter:brightness(90%);
+         filter:brightness(90%);
     }
     .projects h1,
     .projects button, 
@@ -659,4 +726,67 @@ text-decoration: underline;
     text-align: left;
     color: var(--rust);
   }
+
+  /* style contact page */
+  /* respinsive google map  */
+  /* responsive google map */
+  #hero-image.contactPage{
+    margin: 0;
+    padding: 0;
+  }
+  #content.contact-page{
+    gap: 100px;
+  }
+  .contact-form{
+    width: 40%;
+  }
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:49.25%;
+        position:relative;
+        height:0;
+        
+    }
+
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }   
+    
+
+    #hero-image.contactPage h1{
+        color: white;
+        font-size: 32px;
+        text-align: left;
+    }
+    #hero-image.contactPage p{
+        color: white;
+        font-size: 18px;
+        text-align: left;
+        width: 500px;
+        margin: 10px ;
+    }
+    #content.contact-page{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 50px;
+    }
+    .contact-form{
+        width: 50%;
+        line-height: 3em;
+        color: black;
+    }
+    .contact-form h1{
+        color: var(--lightgeen);
+        font-size: 32px;
+    }
+    .hero-image.hero-content{
+        margin-top:0px;
+        
+    }
+
 }
