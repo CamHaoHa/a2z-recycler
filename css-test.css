@@ -784,7 +784,7 @@ text-decoration: underline;
         color: var(--lightgeen);
         font-size: 32px;
     }
-    .hero-image.hero-content{
+    .hero-image.hero-content.contactPage{
         margin-top:0px;
         
     }
