@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A2Z Recycler</title>
+    <meta name="author" content=" Cam Hao Ha  email: cam.ha2@tafensw.edu.au">
+    <link rel="stylesheet" href="css-test.css">          
+    <link rel="stylesheet" href="aboutus.css">                                                                                                                                                                           
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function() {
+        $("a[href=#menu-expand]").click(function(e) {
+            $(".menu").toggleClass("menu-open");
+            e.preventDefault();
+        });
+    }); 
+  </script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+    
+    <div id="topper">
+        <header>
+            <a href="index.html"><img src="images/A-z-Recyller-3.png" alt="logo_image"></a>
+        </header>
+        <div id="responsive-menu">
+            <div class="menu-icon">
+                <a href="#menu-expand"><img src="images/menu_icon.png" width="25" height="25" alt="Responsive Menu icon"></a>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="aboutus.html" id="current">ABOUT&nbsp;US</a></li>
+                    <li><a href="contact.html">CONTACT&nbsp;US</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="social-media-icons">
+            <ul >
+                <li><a href=""><img src="images/facebook_small.png" alt="facebook_small"></a></li>
+                <li><a href=""><img src="images/youtube-variation_small.png" alt="youtube-variation_small"></a></li>
+                <li><a href=""><img src="images/twitter_small.png" alt="twitter_small"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end topper -->
+<main>
+
+<!-- start cide here -->
+
+<div id="hero-image" class="aboutUs" >
+    <!-- <a href="index.html"><img src="images/hero-image-700.png" alt="hero-image" ></a> -->
+    <div class="hero-image flex-center hero-content aboutUs">
+        <!-- <button type="button" onclick="window.location.href='aboutus.html';">ABOUT US</button> 
+         -->
+         <h1>ABOUT US</h1>
+    </div>
+</div>
+<!-- end hero-image  -->
+<div id="content" class="aboutUs">
+    <div class="row-1">
+        <!-- <div class="neon"> -->
+            <h1>WELCOME TO A2Z RECYCLER</h1>
+        <!-- </div> -->
+        <p>Gelos launched A2Z Recycler in October 2022.</p>
+        <p>With us, you can:</p>
+        <ul>
+            <li>Reduce waste sent to landfills and incinerators.</li>
+            <li>Prevents pollution.</li>
+            <li>Conserve natural resources.</li>
+            <li>Conserves energy.</li>
+            <li>Creates jobs, producing economic benefits.</li>
+        </ul>
+    </div>
+    <div class="mission-statement">
+       <div>
+            <h1>Mission Statement</h1>
+            <p>At A2Z recyclers we understand the connection between a healthy planet and good recycling habits. We aim to make our earth green and inculcate recycling as a habit, not a practice.</p>
+       </div>
+       <div>
+            <h1>Vision</h1>
+            <p>To promote recycling habits in every household and business organisation.</p>
+       </div>
+       <div>
+            <h1>Values</h1>
+            <ul>
+                <li>Commitment – To make reduce pollution</li>
+                <li>Teamwork – to work collectively as a society to make the environment cleaner. </li>
+                <li>Responsibility – to make everyone understand how good and bad recycling habits affect the environment.</li>
+            </ul>
+       </div>
+
+    </div>
+    <div class="row-2">
+        <h1>
+            Education Program
+        </h1>
+        <div>
+            <img src="images/pexels-ron-lach-8989979.jpg" alt="kid and a2z" >
+        </div>
+        <p>
+            A workshop to teach kids basic recycling habits is coming up on Friday 16th November to Sunday 18th November at the Baden Powell Scout Centre, Pennant Hills, NSW.
+        </p>
+        <button type="button" onclick="window.location.href='aboutus.html';">FIND OUT MORE</button>
+
+    </div>
+
+    <div class="row-6 contact flex-column-center">
+        <h1>Create a custom waste plan for your business </h1>
+        <p>Our leading facilities and technology can manage a huge range of waste. We have all kinds of service to suit your business needs</p>
+        <h1>1. Call Us Today</h1>
+        <p>Contact us via our contact form or call 1300 000 000</p>
+        <h1>2. Get a free quote</h1>
+        <p>Our service team will help you to find out best waste solution</p>
+        <h1>3. Be a Sustainable Business</h1>
+        <p>We consult you to make sustainable easier for you</p>
+        <button onclick="window.location.href='contactus.html';">Contact Us</button>
+    </div>
+    
+    <div class="row-7 sub flex-column-center">
+        <h5 class="flex-grow">Stay up to date with our latest news and event</h5>
+        <input type="email" placeholder="ENTER EMAIL ADDRESS"/>
+        <input type="submit" value= "SUBSCRIBE"/>
+    </div>
+
+</div>
+</main>
+
+<footer class="max-width">
+
+<ul id="utilities">
+    <li>&copy; A-Z Recyling Copyright </li>
+    <li><a href="">Privacy Policy</a></li>
+</ul>
+
+<ul id="socials">
+    <li><a href=""><img src="images/twitter_small.png" width="26" height="20" alt="twitter icon" title="send us tweets"></a></li>
+    <li><a href=""><img src="images/facebook_small.png" width="20" height="20" alt="facebook icon" title="follow us on Facebook"></a></li>
+    <li><a href=""><img src="images/instagram_small.png" width="20" height="20" alt="social icon"></a></li>
+</ul>
+</footer>
+
+
+</div>
+
+</body>
+</html>

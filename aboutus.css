@@ -1,0 +1,191 @@
+:root {
+    --neon-text-color: #f40;
+    --neon-border-color: #08f;
+}
+/* neon effect  */
+#hero-image.aboutUs h1 {
+    display: block;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 2rem 3rem 3rem;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    animation: flicker 1.5s infinite alternate;     
+  }
+  
+  h1::-moz-selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+  }
+  
+  h1::selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+  }
+  
+  h1:focus {
+    outline: none;
+  }
+  
+  /* Animate neon flicker */
+  @keyframes flicker {
+      
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        
+          text-shadow:
+              -0.2rem -0.2rem 1rem #fff,
+              0.2rem 0.2rem 1rem #fff,
+              0 0 2rem var(--neon-text-color),
+              0 0 4rem var(--neon-text-color),
+              0 0 6rem var(--neon-text-color),
+              0 0 8rem var(--neon-text-color),
+              0 0 10rem var(--neon-text-color);
+          
+          box-shadow:
+              0 0 .5rem #fff,
+              inset 0 0 .5rem #fff,
+              0 0 2rem var(--neon-border-color),
+              inset 0 0 2rem var(--neon-border-color),
+              0 0 4rem var(--neon-border-color),
+              inset 0 0 4rem var(--neon-border-color);        
+      }
+      
+      20%, 24%, 55% {        
+          text-shadow: none;
+          box-shadow: none;
+      }    
+  }
+/* style sheet for  contact us page */
+/* style row 1  */
+#content.aboutUs .row-1{
+    padding: 20px;
+    color: green;
+}
+#content.aboutUs  h1{
+    background: transparent;
+    color: var(--lightgeen);
+    margin-top: 0px;
+    text-align: center;
+    font-size: 16px;
+
+}
+/* //////////////////////////////////////////////////////////////// */
+/* style row 2  */
+#content.aboutUs .row-2{
+    color: var(--green);
+    font-size: 10px;
+    border-image: linear-gradient(to left, white, var(--yellow)) 1;;
+    /* background: linear-gradient(to top, #ffffff 97%, var(--yellow) 100%); */
+    border-width: 6px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    
+    
+}
+#content.aboutUs .row-2 button{
+    margin-left: 60px;
+    margin-top: 30px;
+    color: var(--lightgeen);
+    color: var(--green);
+    border-radius: 0;
+    background-color: white;
+    font-size: 17px;
+    border: 1px solid var(--green);
+}
+#content.aboutUs img{ 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#content.aboutUs .row-2 h1 {
+    font-size: 20px;
+    margin: 10px auto;
+}
+.aboutUs .mission-statement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+    background-color: #5eb245;
+    
+    padding: 20px;
+    
+}
+#content.aboutUs .mission-statement h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.aboutUs .mission-statement div {
+    color: white;
+    text-align: left;
+    
+    
+}
+.aboutUs .mission-statement p  {
+    margin-bottom: 50px;
+}
+.aboutUs .mission-statement div:last-child{
+    margin-bottom: 50px;
+}
+
+
+
+@media only screen and (min-width: 769px){
+    .hero-content{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    #hero-image.aboutUs h1 {
+        font-size: 3rem;
+        margin: auto;
+    }
+    #content.aboutUs .row-1{
+        position: relative;
+        background-color: white;
+        width: 60%;
+        margin: 0 auto;
+        margin-top:-50px;
+        padding-left: 40px;
+        z-index: 3;
+        
+    }
+    #content.aboutUs h1{
+        padding-top: 0;
+        font-size: 20px;
+       
+
+    }
+    .row-1 p{
+        line-height: 2rem;
+    }
+    /* style mission state ment session with 3 column  */
+    .aboutUs .mission-statement {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: white;
+        
+        
+    }
+    
+    .aboutUs .mission-statement div{
+        width: 400px;
+        color: red;
+        background-color: var(--green);
+    }
+
+    .aboutUs .mission-statement div:last-child {
+        margin-bottom: 0px;
+        
+    }
+
+    
+
+}

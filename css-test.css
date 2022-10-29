@@ -105,11 +105,40 @@ nav a:hover{
     height: 40vh;
    
 }
+/* change hero image for contact Page  */
 #hero-image.contactPage{
     background-image: url(images/pexels-ekaterina-belinskaya-4744747.jpg);
     height: 40vh;
 }
 
+/* change hero image for aboutus page  */
+#hero-image.aboutUs{
+    background-image: url(images/alessandro-bianchi-_kdTyfnUFAc-unsplash.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.hero-image.flex-center.aboutUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.hero-image.flex-center.aboutUs button{
+    /* flex-grow: 1; */
+    align-self:flex-end;
+    background-color: var(--lightgeen);
+    color:white;
+    margin-bottom: 1px;
+
+    
+}
+/* ////////// */
 .flex-center{
     display: flex;
     flex-direction: row;
@@ -434,6 +463,28 @@ text-decoration: underline;
 #info-container a:hover{
     text-decoration: underline;
 }
+/* //// */
+/* style aboutus page  */
+/* style content  */
+#content.aboutUs img{ 
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#content.aboutUs {
+    line-height: 1.5em;
+    width:100%;;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+#content.aboutUs li{
+    margin: 20px;
+    list-style: disc;
+}
+
 
 
 /* /* screen sizes >769px   */
@@ -689,8 +740,9 @@ text-decoration: underline;
    }
   .testimonial blockquote {
     margin: 10px 10px 0;
-    background: #efefef;
+    
     background: -webkit-linear-gradient(to left, #d7dde8, #757f9a);
+    background: #efefef;
     padding: 20px 60px;
     position: relative;
     border: none;
@@ -788,5 +840,6 @@ text-decoration: underline;
         margin-top:0px;
         
     }
+    hero-image flex-center hero-content un-active
 
 }
