@@ -171,8 +171,6 @@
         flex-direction: row;
         justify-content: space-around;
         background-color: white;
-        
-        
     }
     
     .aboutUs .mission-statement div{
@@ -186,6 +184,59 @@
         
     }
 
+    .aboutUs .mission-statement .gradient-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2rem;
+        position: relative;
+        padding: 2% 2em;
+        box-sizing: border-box;
+        color: var(--green);
+        background: -moz-linear-gradient(left, var(--yellow) 0%, var(--yellow) 50%, var(--yellow) 50%, var(--yellow) 100%);
+	    background: -webkit-gradient(linear, left top, right top, color-stop(0%,var(--yellow)),color-stop(50%,var(--yellow)), color-stop(50%,var(--yellow)), color-stop(100%,var(--yellow)));
+        background-clip: padding-box;
+        border: solid 5px transparent;
+        border-radius: 1em;
+    }
+    #content.aboutUs .mission-statement .gradient-box h1{
+        color: var(--green);
+
+    }
+    #content.aboutUs .mission-statement:nt-child(2){
+        background-color: red;
+    }
     
+    #content.aboutUs .mission-statement li{
+        margin-top: 0;
+    }
+    .row-2{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+    }
+    
+    .row-2 div:nth-of-type(1){
+        flex-shrink: 0;
+    }
+    .row-2 div:nth-of-type(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .row-2 div:nth-of-type(2) p{
+        font-size: 18px;
+        
+    }
+
+    #content.aboutUs .row-2 button{
+        margin: 0 auto;
+    }
+  
 
 }
