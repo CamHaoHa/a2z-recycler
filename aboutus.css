@@ -1,6 +1,7 @@
 :root {
     --neon-text-color: #f40;
     --neon-border-color: #08f;
+    --yellow-background: #CAB128;
 }
 /* neon effect  */
 #hero-image.aboutUs h1 {
@@ -193,8 +194,8 @@
         padding: 2% 2em;
         box-sizing: border-box;
         color: var(--green);
-        background: -moz-linear-gradient(left, var(--yellow) 0%, var(--yellow) 50%, var(--yellow) 50%, var(--yellow) 100%);
-	    background: -webkit-gradient(linear, left top, right top, color-stop(0%,var(--yellow)),color-stop(50%,var(--yellow)), color-stop(50%,var(--yellow)), color-stop(100%,var(--yellow)));
+        background: -moz-linear-gradient(left, var(--yellow-background) 0%, var(--yellow-background) 50%, var(--yellow-background) 50%, var(--yellow-background) 100%);
+	    background: -webkit-gradient(linear, left top, right top, color-stop(0%,var(--yellow-background)),color-stop(50%,var(--yellow-background)), color-stop(50%,var(--yellow-background)), color-stop(100%,var(--yellow-background)));
         background-clip: padding-box;
         border: solid 5px transparent;
         border-radius: 1em;
@@ -237,6 +238,30 @@
     #content.aboutUs .row-2 button{
         margin: 0 auto;
     }
-  
+    
+    .row-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        
+    }
+    .row-3::before{
+        content: "Sponsor";
+        
+    }
+    .row-3 i{ 
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .row-3 i:hover{
+        color: green;
+        font-size: 20px;   
+    }
+    .row-3 .sponsor-name {
+        background-color: gray;
+        
+    }
+    
 
 }

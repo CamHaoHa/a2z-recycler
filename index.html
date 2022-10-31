@@ -6,9 +6,11 @@
     <meta charset="utf-8">
     <title>A2Z Recycler</title>
     <meta name="author" content=" Cam Hao Ha  email: cam.ha2@tafensw.edu.au">
-    <link rel="stylesheet" href="css-test.css">                                                                                                                                                                                     
+    <link rel="stylesheet" href="css-test.css"> 
+    <link rel="stylesheet" href="login.css">                                                                                                                                                                                    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="app.js"></script>
     <script>
     $(function() {
         $("a[href=#menu-expand]").click(function(e) {
@@ -59,10 +61,39 @@
     <!-- <a href="index.html"><img src="images/hero-image-700.png" alt="hero-image" ></a> -->
     <div class="hero-image flex-center hero-content">
         <h1>Let's Recycling Everything</h1>
-        <button onclick="window.location.href ='login.html';">LOG IN</button>
-        <button onclick="window.location.href='contact.html';">MAKE ENQUIRY</button> 
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">LOG IN</button>
+        <button onclick="window.location.href='contact.html' ;" style="width:auto">MAKE ENQUIRY</button> 
     </div>
 </div>
+<!-- modal login form  -->
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="images/A-z-Recyller2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
 <!-- end hero-image  -->
 <div id="content">
     <div class="row-1 flex-column">
