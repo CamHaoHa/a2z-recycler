@@ -308,7 +308,7 @@ p img{
 
 .row-7 {
     background-color: var(--lightgeen);
-    padding: 30px 10px;
+    padding: 30px 20px;
     text-align: center;
     color: white;
     font-size: 14px;
@@ -485,6 +485,11 @@ text-decoration: underline;
     list-style: disc;
 }
 
+/* style the login modal box  */
+#id01 .modal-content {
+    width: 100%;
+}
+
 
 
 /* /* screen sizes >769px   */
@@ -565,10 +570,16 @@ text-decoration: underline;
         vertical-align: center;
         padding: 20px 20px;
         text-align: center;
-        margin-top: 120px;
-       margin-left: 190px;
+        /* margin-top: 120px;
+       margin-left: 190px; */
        
     }
+
+    /* style modal box  */
+    #id01 .modal-content {
+        width: 50%;
+    }
+    .modal
     .hero-content button{
         background-color: #4CAF50; 
         border: none;

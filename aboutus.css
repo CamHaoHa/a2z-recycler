@@ -195,13 +195,14 @@
         box-sizing: border-box;
         color: var(--green);
         background: -moz-linear-gradient(left, var(--yellow-background) 0%, var(--yellow-background) 50%, var(--yellow-background) 50%, var(--yellow-background) 100%);
-	    background: -webkit-gradient(linear, left top, right top, color-stop(0%,var(--yellow-background)),color-stop(50%,var(--yellow-background)), color-stop(50%,var(--yellow-background)), color-stop(100%,var(--yellow-background)));
+	    /* background: -webkit-gradient(linear, left top, right top, color-stop(0%,var(--yellow-background)),color-stop(50%,var(--yellow-background)), color-stop(50%,var(--yellow-background)), color-stop(100%,var(--yellow-background))); */
         background-clip: padding-box;
         border: solid 5px transparent;
         border-radius: 1em;
     }
     #content.aboutUs .mission-statement .gradient-box h1{
-        color: var(--green);
+        color: varwhite;
+        font-size: 22px;
 
     }
     #content.aboutUs .mission-statement:nt-child(2){
@@ -210,6 +211,14 @@
     
     #content.aboutUs .mission-statement li{
         margin-top: 0;
+        color: white;
+        opacity: (0.8);
+    }
+
+    #content.aboutUs .mission-statement p{ 
+        color: white;
+        opacity: (0.8);
+       
     }
     .row-2{
         display: flex;
@@ -232,6 +241,7 @@
 
     .row-2 div:nth-of-type(2) p{
         font-size: 18px;
+        
         
     }
 
