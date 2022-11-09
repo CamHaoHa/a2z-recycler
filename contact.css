@@ -1,0 +1,17 @@
+@media only screen and (max-width: 769px){
+    #hero-image{
+        display: none;
+    }
+
+    #content .contact-form{
+        order:1;
+    }
+    #info-container.info-container{
+    order:0;
+    margin: 10px auto;
+    padding: 10px 20px;
+    }
+    
+
+    
+}
