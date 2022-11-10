@@ -201,7 +201,7 @@
         border-radius: 1em;
     }
     #content.aboutUs .mission-statement .gradient-box h1{
-        color: varwhite;
+        color:var(--white);
         font-size: 22px;
 
     }
